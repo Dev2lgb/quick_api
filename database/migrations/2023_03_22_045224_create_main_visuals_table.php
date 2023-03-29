@@ -19,7 +19,6 @@ return new class extends Migration
             $table->text('subtitle')->comment('서브텍스트');
             $table->integer('order')->comment('정렬순서');
             $table->enum('isUse', ['Y','N'])->comment('사용여부');
-            $table->integer('order')->comment('정렬순서');
             $table->string('fileName', 255)->comment('파일명');
             $table->timestamps();
         });
