@@ -17,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+/*
+데이터입력 : post
+수정 : put
+삭제 : delete
+데이터조회 : get
+*/
+
+Route::post('/designsetting',[DesignSettingController::class,'store']);
